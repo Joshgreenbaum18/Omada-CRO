@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Omada Health — Senior Director, Growth Marketing Blueprint</title>
+<meta name="description" content="Omada Health Senior Director Growth Marketing Strategic Blueprint. Pioneer of digital therapeutics. 1,800+ enterprise clients. 5 programs. $20T market opportunity.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{--t:#2ECC8A;--b:#4A7CF0;--g:#F0A030;--pk:#E0507A;--v:#9B6CF0;--tl:#28C8C0;--bg:#020808;--sf:#081412;--cd:#0C1C1A;--br:#142820;--tx:#E8F8F4;--mu:#6A9888;--su:#8AB8A8}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font-family:'Syne',sans-serif;overflow-x:hidden;min-height:100vh}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;background-image:linear-gradient(rgba(46,204,138,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(46,204,138,.025) 1px,transparent 1px);background-size:52px 52px}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;height:58px;background:rgba(2,8,8,.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--br);display:flex;align-items:center;justify-content:space-between;padding:0 40px;gap:8px}
+.nb{display:flex;align-items:center;gap:12px;cursor:pointer;text-decoration:none}
+.nlogo{width:32px;height:32px;border-radius:7px;background:linear-gradient(135deg,var(--t),var(--b));display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:500;color:#000;flex-shrink:0}
+.nword{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:700;color:var(--tx)}
+.ntag{font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--t);letter-spacing:.18em;line-height:1.2}
+.nl{display:flex;gap:2px;flex-wrap:wrap}
+.nl button{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--mu);background:transparent;border:1px solid transparent;padding:6px 11px;border-radius:5px;cursor:pointer;transition:all .15s;white-space:nowrap}
+.nl button:hover{color:var(--tx);border-color:var(--br)}
+.nl button.on{color:var(--t);border-color:rgba(46,204,138,.3);background:rgba(46,204,138,.08)}
+.ncta{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;background:var(--t);color:#000;font-weight:600;padding:8px 16px;border-radius:6px;border:none;cursor:pointer;transition:all .15s;white-space:nowrap;flex-shrink:0}
+.ncta:hover{background:#38e89a;transform:translateY(-1px)}
+.pg{display:none;animation:fu .4s ease both}
+.pg.on{display:block}
+@keyframes fu{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.wrap{max-width:1100px;margin:0 auto;padding:52px 40px 80px}
+.ey{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--b);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.ey::before{content:'';width:18px;height:1px;background:var(--b)}
+h2{font-family:'Cormorant Garamond',serif;font-size:clamp(24px,3.5vw,42px);font-weight:700;color:var(--tx);margin-bottom:10px;line-height:1.1}
+.sub{font-size:13px;color:var(--mu);line-height:1.8;max-width:660px;margin-bottom:32px}
+.card{background:var(--cd);border:1px solid var(--br);border-radius:12px;padding:22px 26px}
+.ctit{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{text-align:left;padding:8px 10px;color:var(--mu);font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.08em;border-bottom:1px solid var(--br);font-weight:400}
+td{padding:9px 10px;border-bottom:1px solid #0a1a18;color:var(--su);vertical-align:top}
+tr:last-child td{border-bottom:none}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:700px){.g2{grid-template-columns:1fr}}
+.hero{position:relative;overflow:hidden;min-height:calc(100vh - 58px);padding-top:58px;display:flex;flex-direction:column;justify-content:center}
+.hero-glow{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 70% 55% at 65% 38%,rgba(74,124,240,.08) 0%,transparent 60%),radial-gradient(ellipse 40% 40% at 18% 65%,rgba(46,204,138,.06) 0%,transparent 55%)}
+.hero-inner{max-width:1100px;margin:0 auto;padding:70px 40px 130px;position:relative;z-index:1;width:100%}
+.hero-tag{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--t);margin-bottom:20px;display:flex;align-items:center;gap:14px}
+.hero-tag::before{content:'';width:44px;height:1px;background:var(--t)}
+.hero-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(44px,7.5vw,90px);font-weight:700;line-height:1.0;letter-spacing:-.025em;color:var(--tx);margin-bottom:8px}
+.hero-h1 span{color:var(--t)}
+.hero-deck{font-family:'Cormorant Garamond',serif;font-size:clamp(16px,2.2vw,22px);font-weight:600;font-style:italic;color:var(--mu);margin-bottom:28px}
+.hero-desc{font-size:14px;color:var(--su);line-height:1.85;max-width:560px;margin-bottom:40px}
+.hero-stats{display:flex;gap:28px;flex-wrap:wrap;margin-bottom:44px}
+.hstat{border-left:2px solid var(--br);padding-left:16px}
+.hstat-v{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:700;color:var(--tx);line-height:1}
+.hstat-v.acc{color:var(--t)}
+.hstat-l{font-size:10px;color:var(--mu);letter-spacing:.07em;margin-top:3px}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn-pri{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;background:linear-gradient(90deg,var(--t),var(--b));color:#000;font-weight:600;padding:13px 26px;border-radius:7px;border:none;cursor:pointer;transition:all .2s}
+.btn-pri:hover{transform:translateY(-2px);opacity:.9}
+.btn-ghost{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;background:transparent;color:var(--tx);padding:12px 26px;border-radius:7px;border:1px solid var(--br);cursor:pointer;transition:all .2s}
+.btn-ghost:hover{border-color:var(--t);color:var(--t)}
+.ticker{position:absolute;bottom:0;left:0;right:0;border-top:1px solid var(--br);background:rgba(8,20,18,.9);padding:10px 40px;display:flex;gap:32px;overflow-x:auto;white-space:nowrap}
+.titem{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--mu)}
+.titem strong{color:var(--t)}
+.tsep{color:var(--br)}
+.co-card{background:linear-gradient(135deg,#071a18,#020808);border:1px solid rgba(46,204,138,.3);border-left:4px solid var(--t);border-radius:10px;padding:20px 24px;margin-bottom:24px}
+.co-bdg{font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.15em;color:var(--t);background:rgba(46,204,138,.1);border:1px solid rgba(46,204,138,.2);border-radius:3px;padding:2px 8px;display:inline-block;margin-bottom:12px}
+.co-txt{font-size:13px;color:#c8e8e0;line-height:1.9}
+.co-txt strong{color:var(--t);font-weight:600}
+.resp-card{background:var(--sf);border:1px solid var(--br);border-radius:10px;overflow:hidden;margin-bottom:12px}
+.rh{padding:12px 18px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--br)}
+.ri{font-size:16px}.rn{font-size:13px;font-weight:600;color:var(--tx)}
+.rb{padding:14px 18px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:600px){.rb{grid-template-columns:1fr}}
+.rlbl{font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.1em;margin-bottom:5px}
+.rverb{font-size:11px;color:#c8e8e0;line-height:1.7;border-left:2px solid;padding-left:10px;margin:0}
+.rexec{list-style:none;margin:0;padding:0}
+.rexec li{display:flex;gap:6px;font-size:11px;color:var(--su);line-height:1.55;margin-bottom:5px}
+.metgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:12px;margin-bottom:22px}
+.met{background:var(--cd);border:1px solid var(--br);border-radius:10px;padding:14px 16px;position:relative;overflow:hidden;transition:transform .2s}
+.met:hover{transform:translateY(-2px)}
+.mbar{position:absolute;top:0;left:0;right:0;height:2px}
+.mlbl{font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.1em;color:var(--mu);margin-bottom:7px}
+.mval{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:700;color:var(--tx);margin-bottom:4px;line-height:1}
+.mch{font-size:11px;font-weight:600}
+.msub{font-size:10px;color:var(--mu)}
+.sync-bar{background:linear-gradient(90deg,#071a18,#0a1412);border:1px solid rgba(46,204,138,.2);border-radius:8px;padding:10px 18px;margin-bottom:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.sdot{width:7px;height:7px;border-radius:50%;background:var(--t);box-shadow:0 0 7px var(--t);animation:pulse 2s infinite;flex-shrink:0}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.slbl{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--t);letter-spacing:.1em}
+.ssrc{font-size:10px;color:var(--mu);margin-left:7px}
+.smeta{display:flex;gap:16px;flex-wrap:wrap}
+.si .sl{font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--mu);letter-spacing:.07em}
+.si .sv{font-size:11px;font-weight:600;color:var(--tx)}
+.strat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:16px;margin-bottom:26px}
+.strat-card{background:var(--cd);border:1px solid var(--br);border-radius:12px;padding:22px;transition:transform .2s}
+.strat-card:hover{transform:translateY(-3px)}
+.strat-icon{font-size:24px;margin-bottom:10px}
+.strat-name{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:700;margin-bottom:14px;color:var(--tx)}
+.strat-items{list-style:none;padding:0;margin:0}
+.strat-items li{font-size:11px;color:var(--su);padding:6px 0;border-bottom:1px solid #0a1a18;display:flex;gap:7px;line-height:1.55}
+.strat-items li:last-child{border-bottom:none}
+.prog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-bottom:22px}
+.prog-card{background:var(--cd);border:1px solid var(--br);border-radius:10px;padding:16px;transition:transform .2s}
+.prog-card:hover{transform:translateY(-2px)}
+.prog-icon{font-size:22px;margin-bottom:8px}
+.prog-name{font-size:12px;font-weight:600;color:var(--tx);margin-bottom:4px}
+.prog-desc{font-size:10px;color:var(--mu);line-height:1.55;margin-bottom:8px}
+.prog-tag{font-family:'JetBrains Mono',monospace;font-size:7px;letter-spacing:.08em;border-radius:3px;padding:2px 6px;display:inline-block}
+.channel-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(195px,1fr));gap:12px}
+.channel{background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px}
+.ch-bdg{font-size:8px;border-radius:3px;padding:2px 7px;letter-spacing:.08em;display:inline-block;margin-bottom:8px}
+.ch-nm{font-size:12px;font-weight:600;color:var(--tx);margin-bottom:4px}
+.ch-desc{font-size:11px;color:var(--mu);line-height:1.55}
+.qwgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.qwc{background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px}
+.qwp{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.1em;margin-bottom:9px}
+.qwl{list-style:none;margin:0;padding:0}
+.qwl li{display:flex;gap:6px;font-size:11px;color:var(--su);line-height:1.55;margin-bottom:4px}
+.phase-card{background:var(--cd);border:1px solid var(--br);border-radius:12px;overflow:hidden;margin-bottom:16px}
+.ph{padding:15px 22px;display:flex;align-items:center;gap:14px}
+.pnum{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:500;flex-shrink:0}
+.ptag{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.14em;margin-bottom:2px}
+.pname{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:700;color:var(--tx)}
+.pb{padding:15px 22px;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:9px}
+.ms{display:flex;gap:8px;align-items:flex-start}
+.msdot{width:5px;height:5px;border-radius:50%;margin-top:6px;flex-shrink:0}
+.mstxt{font-size:11.5px;color:var(--su);line-height:1.6}
+.org-row{background:var(--sf);border:1px solid var(--br);border-radius:8px;padding:12px 16px;margin-bottom:10px;display:grid;grid-template-columns:200px 1fr 185px;gap:14px;align-items:center}
+@media(max-width:750px){.org-row{grid-template-columns:1fr}}
+.orole{font-size:12px;font-weight:600;color:var(--tx);margin-bottom:2px}
+.orep{font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.07em}
+.oscope{font-size:11px;color:var(--su);line-height:1.55}
+.okpi{border-radius:6px;padding:8px 11px}
+.okl{font-family:'JetBrains Mono',monospace;font-size:7px;letter-spacing:.07em;margin-bottom:2px}
+.okv{font-size:10px;color:#c8e8e0;line-height:1.45}
+.hire-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+.hire{background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px}
+.hiret{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:7px;gap:6px}
+.hiren{font-size:12px;font-weight:600;color:var(--tx);line-height:1.35}
+.hirew{font-family:'JetBrains Mono',monospace;font-size:7px;padding:2px 6px;border-radius:3px;white-space:nowrap}
+.hired{font-size:11px;color:var(--mu);line-height:1.55}
+.cap-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.cap{background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px}
+.capl{font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.08em;margin-bottom:4px}
+.capv{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:700;color:var(--tx);margin-bottom:4px}
+.capd{font-size:11px;color:var(--mu);line-height:1.5}
+.roi-note{font-size:11px;color:var(--su);padding:9px 14px;background:rgba(240,160,48,.05);border:1px solid rgba(240,160,48,.18);border-radius:6px;margin-bottom:14px}
+.roi-note span{color:var(--g)}
+.thesis{background:linear-gradient(135deg,#071a18,#020808);border:1px solid var(--br);border-radius:12px;padding:28px 34px;text-align:center;margin-top:26px}
+.thlbl{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.2em;color:var(--b);margin-bottom:10px}
+.thq{font-family:'Cormorant Garamond',serif;font-size:clamp(14px,2vw,19px);font-style:italic;color:#c8e8e0;line-height:1.9;max-width:700px;margin:0 auto 12px}
+.thatr{font-size:11px;color:#3a6858}
+.exp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-bottom:22px}
+.exp-card{background:var(--cd);border:1px solid var(--br);border-radius:10px;padding:16px}
+.exp-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px}
+.exp-logo{font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:600;color:var(--t);background:rgba(46,204,138,.1);border:1px solid rgba(46,204,138,.2);border-radius:3px;padding:2px 8px;letter-spacing:.08em}
+.exp-type{font-size:9px;color:var(--mu)}
+.exp-name{font-size:12px;font-weight:600;color:var(--tx);margin-bottom:4px}
+.exp-desc{font-size:11px;color:var(--mu);line-height:1.55}
+@media(max-width:900px){.nl{display:none}}
+@media(max-width:600px){.wrap{padding:40px 20px 60px}.hero-inner{padding:50px 20px 110px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nb" onclick="goPg('home')">
+    <div class="nlogo">OH</div>
+    <div><div class="nword">Omada Health</div><div class="ntag">Sr. Director, Growth Marketing · Blueprint</div></div>
+  </a>
+  <div class="nl">
+    <button id="nb-home" class="on" onclick="goPg('home')">Home</button>
+    <button id="nb-role" onclick="goPg('role')">The Role</button>
+    <button id="nb-strategy" onclick="goPg('strategy')">Strategy</button>
+    <button id="nb-channels" onclick="goPg('channels')">Channels</button>
+    <button id="nb-dash" onclick="goPg('dash')">Dashboard</button>
+    <button id="nb-team" onclick="goPg('team')">Team</button>
+    <button id="nb-programs" onclick="goPg('programs')">Programs</button>
+    <button id="nb-road" onclick="goPg('road')">Roadmap</button>
+  </div>
+  <button class="ncta" onclick="goPg('role')">View Role →</button>
+</nav>
+
+<!-- HOME -->
+<div id="pg-home" class="pg on">
+<div class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div class="hero-tag">Senior Director, Growth Marketing · LinkedIn #4402479901 · Blueprint 2025–2028</div>
+    <div class="hero-h1">Omada<br><span>Growth</span><br>Blueprint</div>
+    <div class="hero-deck">The pioneer of digital therapeutics. Now we need the world to know it.</div>
+    <p class="hero-desc">Omada Health invented digital therapeutics, pioneered outreach marketing for digital care, and built a platform serving 1,800+ enterprise clients — from Disney to Cigna. The Senior Director of Growth Marketing will own the member acquisition engine that drives Omada's next phase of scale.</p>
+    <div class="hero-stats">
+      <div class="hstat"><div class="hstat-v acc">1,800+</div><div class="hstat-l">Enterprise Clients</div></div>
+      <div class="hstat"><div class="hstat-v">1M+</div><div class="hstat-l">Members Served</div></div>
+      <div class="hstat"><div class="hstat-v">5</div><div class="hstat-l">Program Lines</div></div>
+      <div class="hstat"><div class="hstat-v acc">$20T</div><div class="hstat-l">Global Healthcare Market</div></div>
+    </div>
+    <div class="hero-btns">
+      <button class="btn-pri" onclick="goPg('role')">View The Role</button>
+      <button class="btn-ghost" onclick="goPg('strategy')">Growth Strategy</button>
+      <button class="btn-ghost" onclick="goPg('dash')">Open Dashboard</button>
+    </div>
+  </div>
+  <div class="ticker">
+    <span class="titem"><strong>Founded 2011</strong> by CEO Sean Duffy</span>
+    <span class="tsep">·</span>
+    <span class="titem"><strong>Pioneered</strong> Digital Therapeutics & Digital Care</span>
+    <span class="tsep">·</span>
+    <span class="titem"><strong>Disney · Costco · Salesforce · Cigna · BlueCross · Kaiser</strong></span>
+    <span class="tsep">·</span>
+    <span class="titem"><strong>IPO 2025</strong> · 15th Anniversary</span>
+    <span class="tsep">·</span>
+    <span class="titem"><strong>Prevention · Diabetes · Hypertension · GLP-1 · MSK</strong></span>
+  </div>
+</div>
+</div>
+
+<!-- THE ROLE -->
+<div id="pg-role" class="pg" style="padding-top:58px">
+<div class="wrap">
+  <div class="ey">Senior Director, Growth Marketing · LinkedIn #4402479901</div>
+  <h2>The Mandate: Own Member Growth at Scale</h2>
+  <p class="sub">Omada pioneered outreach marketing for digital care and singlehandedly created the digital therapeutics industry. The Senior Director of Growth Marketing will own the member acquisition engine — working hand-in-hand with Omada's management team to build and execute a long-term strategy focused on driving member growth at scale across a B2B2C model.</p>
+
+  <div class="co-card">
+    <div class="co-bdg">FROM THE JOB POSTING · VERBATIM</div>
+    <p class="co-txt">"Omada pioneered outreach marketing for Digital Care, and we're just getting started to disrupt one of the largest industries in the world in a way that presents both an enormous market opportunity as well as a very special opportunity to positively impact people's lives! <strong>Omada singlehandedly created the 'digital therapeutics' industry</strong>, and more recently created the concept of 'digital care.'"</p>
+  </div>
+
+  <div class="card" style="border-top:2px solid var(--t);margin-bottom:22px">
+    <div class="ctit" style="color:var(--t)">Qualifications — From the Job Posting</div>
+    <div id="quals-el"></div>
+  </div>
+  <div class="card" style="border-top:2px solid var(--b);margin-bottom:22px">
+    <div class="ctit" style="color:var(--b)">Responsibilities — From the Job Posting</div>
+    <div id="resps-el"></div>
+  </div>
+  <div class="card" style="border-top:2px solid var(--g);margin-bottom:22px">
+    <div class="ctit" style="color:var(--g)">90-Day Quick Win Plan</div>
+    <div class="qwgrid" id="qw-el"></div>
+  </div>
+
+  <div class="card" style="margin-bottom:22px">
+    <div class="ctit" style="color:var(--t)">Omada's Enterprise Client Portfolio — From the Website</div>
+    <div class="exp-grid">
+      <div class="exp-card"><div class="exp-top"><div class="exp-logo">Fortune 500 Employers</div></div><div class="exp-name">Disney · Costco · Salesforce</div><p class="exp-desc">Major employer partnerships — self-insured companies offering Omada as a covered benefit. The B2B channel drives member eligibility; growth marketing converts eligible employees into active members.</p></div>
+      <div class="exp-card"><div class="exp-top"><div class="exp-logo">Health Plans</div></div><div class="exp-name">Cigna · BlueCross · Kaiser Permanente</div><p class="exp-desc">National and regional health plan partners. Omada is embedded in plan benefits — growth marketing drives member activation rates from plan-covered populations.</p></div>
+      <div class="exp-card"><div class="exp-top"><div class="exp-logo">Health Systems</div></div><div class="exp-name">Hospitals & Provider Networks</div><p class="exp-desc">Health systems deploy Omada for at-risk populations. Clinical referral pathway supplements digital acquisition — growth marketing converts patients at point of care.</p></div>
+      <div class="exp-card"><div class="exp-top"><div class="exp-logo">Benefit Consultants</div></div><div class="exp-name">Benefit Advisors & Brokers</div><p class="exp-desc">Benefits consultants recommend Omada to employer clients. The Sr. Director partners with the commercial team on materials and campaigns that support this channel.</p></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="ctit" style="color:var(--b)">Omada Values — From the Job Posting</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px">
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px;border-top:2px solid var(--t)"><div style="font-size:12px;font-weight:600;color:var(--t);margin-bottom:5px">Start with Trust</div><p style="font-size:11px;color:var(--mu);line-height:1.55">"We listen closely and we operate with kindness. We provide respectful and candid feedback to each other." — The foundation of how the Sr. Director leads their team and cross-functional relationships.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px;border-top:2px solid var(--b)"><div style="font-size:12px;font-weight:600;color:var(--b);margin-bottom:5px">Seek Context</div><p style="font-size:11px;color:var(--mu);line-height:1.55">"We ask to understand and we build connections." — In growth marketing, this means deeply understanding the member journey before optimizing it.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px;border-top:2px solid var(--g)"><div style="font-size:12px;font-weight:600;color:var(--g);margin-bottom:5px">We &gt; Me</div><p style="font-size:11px;color:var(--mu);line-height:1.55">"We prioritize Omada's progress over team or self." — The Sr. Director is a player-coach who builds up the team, not a siloed individual contributor.</p></div>
+    </div>
+  </div>
+
+  <div class="thesis"><div class="thlbl">THE OPPORTUNITY</div><p class="thq">"Omada has 1,800+ enterprise clients, five programs, and a proven clinical model. The Senior Director of Growth Marketing joins at the moment of scale — the brand is established, the partners are signed, and the eligible members are waiting. The job is to activate them."</p><div class="thatr">— Senior Director, Growth Marketing · Omada Health · 2025</div></div>
+</div>
+</div>
+
+<!-- STRATEGY -->
+<div id="pg-strategy" class="pg" style="padding-top:58px">
+<div class="wrap">
+  <div class="ey">Growth Marketing Strategy</div>
+  <h2>B2B2C at Scale — From Eligible to Enrolled to Engaged</h2>
+  <p class="sub">Omada's growth model is unique: enterprise clients (employers, health plans, health systems) purchase access for their populations, but individual members must choose to enroll and engage. The Sr. Director owns the bridge — the marketing that turns a covered benefit into an activated member.</p>
+
+  <div class="co-card" style="border-left-color:var(--b);border-color:rgba(74,124,240,.35)">
+    <div class="co-bdg" style="color:var(--b);background:rgba(74,124,240,.1);border-color:rgba(74,124,240,.22)">THE B2B2C CHALLENGE — FROM THE JOB POSTING</div>
+    <p class="co-txt" style="font-style:normal">"We are looking for someone with either strong direct <strong style="color:var(--b)">Business-to-Consumer or indirect Business-to-Business-to-Consumer experience</strong> who is passionate about the digital wellness space." The Sr. Director must master both the enterprise relationship AND the individual member conversion — two very different marketing motions running simultaneously.</p>
+  </div>
+
+  <div class="strat-grid">
+    <div class="strat-card" style="border-top:2px solid var(--t)"><div class="strat-icon" style="color:var(--t)">◆</div><div class="strat-name">Member Acquisition</div><ul class="strat-items"><li><span style="color:var(--t)">›</span>Own end-to-end member acquisition funnel across all channels — employer, health plan, digital</li><li><span style="color:var(--t)">›</span>Evaluate and optimize all current customer acquisition paths per the job posting mandate</li><li><span style="color:var(--t)">›</span>Build personalized enrollment journeys for each program (Prediabetes, Diabetes, HTN, GLP-1, MSK)</li><li><span style="color:var(--t)">›</span>Drive sophisticated email marketing campaigns for eligible-but-not-enrolled populations</li><li><span style="color:var(--t)">›</span>A/B test outreach sequences, landing pages, and enrollment CTAs continuously</li></ul></div>
+    <div class="strat-card" style="border-top:2px solid var(--b)"><div class="strat-icon" style="color:var(--b)">◈</div><div class="strat-name">Retention & Engagement</div><ul class="strat-items"><li><span style="color:var(--b)">›</span>Build lifecycle marketing that keeps enrolled members engaged through program completion</li><li><span style="color:var(--b)">›</span>Develop re-engagement campaigns for churned or inactive members</li><li><span style="color:var(--b)">›</span>Personalize communication by program, condition, engagement stage, and channel</li><li><span style="color:var(--b)">›</span>Use outcomes data (weight loss, A1C, BP) in retention messaging — proof that it's working</li><li><span style="color:var(--b)">›</span>Partner with product to reduce in-app friction that contributes to drop-off</li></ul></div>
+    <div class="strat-card" style="border-top:2px solid var(--g)"><div class="strat-icon" style="color:var(--g)">◉</div><div class="strat-name">Employer Outreach Marketing</div><ul class="strat-items"><li><span style="color:var(--g)">›</span>Partner with enterprise sales on employer-specific enrollment campaigns — custom materials per client</li><li><span style="color:var(--g)">›</span>Build "launch playbooks" for new employer launches — email, direct mail, intranet, benefits fair</li><li><span style="color:var(--g)">›</span>Develop HR partner marketing toolkit — everything a benefits manager needs to promote Omada</li><li><span style="color:var(--g)">›</span>Optimize employer-sponsored outreach: open enrollment seasons, wellness challenges, health fairs</li><li><span style="color:var(--g)">›</span>Measure and improve activation rate per employer client — a key commercial retention metric</li></ul></div>
+    <div class="strat-card" style="border-top:2px solid var(--pk)"><div class="strat-icon" style="color:var(--pk)">◐</div><div class="strat-name">Performance & Growth Experimentation</div><ul class="strat-items"><li><span style="color:var(--pk)">›</span>Build a full-funnel growth experimentation engine — 10+ concurrent A/B tests at any given time</li><li><span style="color:var(--pk)">›</span>Own paid digital channels: Google, Meta, programmatic, and employer intranet placements</li><li><span style="color:var(--pk)">›</span>Develop GLP-1 program-specific acquisition strategy — the fastest-growing Omada program</li><li><span style="color:var(--pk)">›</span>Leverage direct mail for eligible populations who haven't converted through digital channels</li><li><span style="color:var(--pk)">›</span>Build predictive enrollment propensity models — who is most likely to enroll and when</li></ul></div>
+  </div>
+
+  <div class="card" style="border-top:2px solid var(--b);margin-bottom:22px">
+    <div class="ctit" style="color:var(--b)">Member Acquisition Journey — End-to-End Funnel</div>
+    <div style="overflow-x:auto"><table><thead><tr><th>Stage</th><th>Member State</th><th>Omada Marketing Action</th><th>Key Metric</th><th>Owner</th></tr></thead><tbody>
+      <tr><td style="font-weight:600;color:var(--tx)">1. Eligibility</td><td style="color:var(--t)">Covered by employer/plan but unaware</td><td>Eligibility file → personalized outreach letter, email, SMS</td><td>Eligible population size</td><td style="font-size:10px;color:var(--su)">Commercial + CRM</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">2. Awareness</td><td style="color:var(--b)">Aware of Omada but not enrolled</td><td>Email sequences, employer intranet, direct mail, benefits fair activation</td><td>Email open rate, click-through</td><td style="font-size:10px;color:var(--su)">Sr. Dir. Growth Mktg</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">3. Consideration</td><td style="color:var(--b)">Visiting omadahealth.com, eligibility check</td><td>Landing page optimization, "Am I Eligible?" flow, retargeting</td><td>Eligibility check completion %</td><td style="font-size:10px;color:var(--su)">Growth + Product</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">4. Enrollment</td><td style="color:var(--g)">Starting enrollment flow</td><td>Enrollment UX optimization, abandon cart recovery, SMS reminders</td><td>Enrollment completion rate</td><td style="font-size:10px;color:var(--su)">Growth + Product</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">5. Activation</td><td style="color:var(--g)">First week — device setup, first coach interaction</td><td>Onboarding email sequence, coach introduction, quick win celebration</td><td>Week 1 activation rate</td><td style="font-size:10px;color:var(--su)">Growth + Clinical</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">6. Engagement</td><td style="color:var(--t)">Active program participant</td><td>Progress emails, milestone celebrations, peer group engagement, coach check-ins</td><td>12-week retention rate</td><td style="font-size:10px;color:var(--su)">Growth + Product</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">7. Advocacy</td><td style="color:var(--t)">Achieving outcomes — weight loss, A1C improvement</td><td>Success story capture, referral program, employer testimonial program</td><td>NPS + referral rate</td><td style="font-size:10px;color:var(--su)">Growth + Clinical</td></tr>
+    </tbody></table></div>
+  </div>
+
+  <div class="card" style="border-top:2px solid var(--g)">
+    <div class="ctit" style="color:var(--g)">B2B2C Channel Strategy — Employer Outreach</div>
+    <p style="font-size:12px;color:var(--mu);margin-bottom:16px;line-height:1.7">Omada's model means most members come through employers and health plans — not organic search. The Sr. Director must design outreach campaigns that work WITHIN the employer environment: email from HR, intranet posts, payroll stuffers, benefits fairs, and direct mail.</p>
+    <div class="channel-grid">
+      <div class="channel"><div class="ch-bdg" style="background:rgba(46,204,138,.12);color:var(--t);border:1px solid rgba(46,204,138,.3)">Highest Conversion</div><div class="ch-nm">Personalized Outreach Letter</div><p class="ch-desc">Direct mail or email from employer/plan — personalized to the member's specific condition risk. "You may be at risk for diabetes. Your employer covers Omada at no cost." Omada pioneered this approach.</p></div>
+      <div class="channel"><div class="ch-bdg" style="background:rgba(74,124,240,.12);color:var(--b);border:1px solid rgba(74,124,240,.3)">High Volume</div><div class="ch-nm">Email Nurture Sequences</div><p class="ch-desc">Sophisticated multi-touch email campaigns for eligible employees who haven't enrolled. Personalized by condition, demographics, and employer. A/B tested continuously for subject lines, CTAs, and timing.</p></div>
+      <div class="channel"><div class="ch-bdg" style="background:rgba(240,160,48,.12);color:var(--g);border:1px solid rgba(240,160,48,.3)">Growing Fast</div><div class="ch-nm">GLP-1 Digital Campaigns</div><p class="ch-desc">Paid social and search for GLP-1 Support program — the fastest-growing Omada offering. Targets employees and plan members who are on or considering GLP-1 medications. High intent, high LTV.</p></div>
+      <div class="channel"><div class="ch-bdg" style="background:rgba(224,80,122,.12);color:var(--pk);border:1px solid rgba(224,80,122,.3)">Re-Engagement</div><div class="ch-nm">Lapsed Member Campaigns</div><p class="ch-desc">Targeted re-enrollment campaigns for previously enrolled but inactive members. Uses outcome data — "Members who complete the program lose an avg of 4.7% body weight. Come back." High ROI given no acquisition cost.</p></div>
+      <div class="channel"><div class="ch-bdg" style="background:rgba(155,108,240,.12);color:var(--v);border:1px solid rgba(155,108,240,.3)">New Channel</div><div class="ch-nm">Health System Referral Flow</div><p class="ch-desc">Provider-referred enrollment path — patient receives referral from their physician or care team to enroll in Omada. Clinical credibility drives highest enrollment rates and best outcomes.</p></div>
+      <div class="channel"><div class="ch-bdg" style="background:rgba(40,200,192,.12);color:var(--tl);border:1px solid rgba(40,200,192,.3)">Open Enrollment</div><div class="ch-nm">Benefits Season Blitz</div><p class="ch-desc">Concentrated campaign during annual benefits enrollment — Oct/Nov for most employers. When employees are already thinking about health benefits, Omada enrollment spikes. Plan the blitz 90 days in advance.</p></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- CHANNELS DEEP DIVE -->
+<div id="pg-channels" class="pg" style="padding-top:58px">
+<div class="wrap">
+  <div class="ey">Channel Strategy Deep Dive</div>
+  <h2>Multi-Channel Integrated Marketing — Owned, Earned, Paid</h2>
+  <p class="sub">The Sr. Director owns the full channel mix — from the email that lands in an eligible employee's inbox to the Google ad that captures high-intent searchers to the direct mail piece that reaches members who haven't responded digitally. Every channel is measured, tested, and optimized continuously.</p>
+
+  <div class="card" style="border-top:2px solid var(--t);margin-bottom:22px">
+    <div class="ctit" style="color:var(--t)">Channel Performance Framework — From the Job Posting</div>
+    <div class="roi-note"><span>Sr. Director Mandate: </span>"Evaluate all of Omada's current customer acquisition paths. Ensure the mix is appropriate for their go-to-market goals." Every channel justified by CAC, enrollment rate, and 12-month member LTV.</div>
+    <div style="overflow-x:auto"><table><thead><tr><th>Channel</th><th>Type</th><th>Primary Use Case</th><th>Key Metric</th><th>Target CAC</th><th>Priority</th></tr></thead><tbody id="channel-tbody"></tbody></table></div>
+  </div>
+
+  <div class="card" style="border-top:2px solid var(--b);margin-bottom:22px">
+    <div class="ctit" style="color:var(--b)">Email Marketing — The Core Engine</div>
+    <p style="font-size:12px;color:var(--mu);margin-bottom:16px;line-height:1.75">From the job posting: <em style="color:#c8e8e0">"Drive sophisticated email marketing and, where appropriate, direct mailer and digital campaigns."</em> Email is Omada's highest-ROI outreach channel — personalized, condition-specific, and scalable across all 1,800+ employer client populations.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px"><div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--t);margin-bottom:6px;letter-spacing:.08em">SEQUENCE TYPE</div><div style="font-size:12px;font-weight:600;color:var(--tx);margin-bottom:4px">Initial Outreach Series</div><p style="font-size:11px;color:var(--mu);line-height:1.55">6-email series for newly eligible members. Personalized by condition risk (A1C, BMI, BP readings from claims data). Week 1: benefit intro. Week 2: social proof. Week 3: urgency + ease of enrollment.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px"><div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--b);margin-bottom:6px;letter-spacing:.08em">SEQUENCE TYPE</div><div style="font-size:12px;font-weight:600;color:var(--tx);margin-bottom:4px">Open Enrollment Blitz</div><p style="font-size:11px;color:var(--mu);line-height:1.55">High-frequency series during Oct–Dec open enrollment window. 10-touch campaign over 8 weeks. Employer co-branded. Includes "last chance to enroll at no cost" urgency messaging.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px"><div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--g);margin-bottom:6px;letter-spacing:.08em">SEQUENCE TYPE</div><div style="font-size:12px;font-weight:600;color:var(--tx);margin-bottom:4px">GLP-1 Medication Trigger</div><p style="font-size:11px;color:var(--mu);line-height:1.55">Triggered campaign when claims data shows member started GLP-1 medication. "You're on Ozempic. Omada helps you build the habits that make it work long-term." Highest-converting new sequence.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px"><div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--pk);margin-bottom:6px;letter-spacing:.08em">SEQUENCE TYPE</div><div style="font-size:12px;font-weight:600;color:var(--tx);margin-bottom:4px">Win-Back / Re-enrollment</div><p style="font-size:11px;color:var(--mu);line-height:1.55">Lapsed member re-engagement series. Personalized with their previous progress data. "You lost 8 lbs. in your first month. The program still works — and it's still covered." Uses own data against churn.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px"><div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--v);margin-bottom:6px;letter-spacing:.08em">SEQUENCE TYPE</div><div style="font-size:12px;font-weight:600;color:var(--tx);margin-bottom:4px">Member Milestone Series</div><p class="ch-desc">Automated in-program engagement emails. Week 4 weight loss milestone. First A1C check. Coach anniversary. Peer group join. Keeps members feeling seen and progressing — directly reduces churn.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px"><div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--tl);margin-bottom:6px;letter-spacing:.08em">SEQUENCE TYPE</div><div style="font-size:12px;font-weight:600;color:var(--tx);margin-bottom:4px">Employer HR Toolkit Emails</div><p style="font-size:11px;color:var(--mu);line-height:1.55">Monthly email to HR/benefits contacts at all 1,800+ employer clients. Program updates, member success stories (de-identified), enrollment tips, and upcoming campaign materials ready to send.</p></div>
+    </div>
+  </div>
+
+  <div class="card" style="border-top:2px solid var(--g);margin-bottom:22px">
+    <div class="ctit" style="color:var(--g)">GLP-1 Support — The Fastest-Growing Program</div>
+    <p style="font-size:12px;color:var(--mu);margin-bottom:16px;line-height:1.75">GLP-1 medications (Ozempic, Wegovy, Mounjaro) are the most talked-about health development of the decade. Omada's GLP-1 Support program is perfectly positioned — providing the behavioral coaching that makes GLP-1s work long-term. The Sr. Director must build a dedicated acquisition strategy for this program.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(195px,1fr));gap:12px">
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px;border-top:2px solid var(--g)"><div style="font-size:11px;font-weight:600;color:var(--g);margin-bottom:5px">Paid Search</div><p style="font-size:11px;color:var(--mu);line-height:1.55">Target: "Ozempic support program," "GLP-1 coaching," "weight loss program with medication." High intent, employer-benefit angle. "Your employer may cover GLP-1 support."</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px;border-top:2px solid var(--b)"><div style="font-size:11px;font-weight:600;color:var(--b);margin-bottom:5px">Claims-Triggered Email</div><p style="font-size:11px;color:var(--mu);line-height:1.55">When health plan data shows GLP-1 prescription, trigger personalized outreach within 7 days. Best timing is at medication initiation — when member motivation is highest.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px;border-top:2px solid var(--pk)"><div style="font-size:11px;font-weight:600;color:var(--pk);margin-bottom:5px">Physician Referral</div><p style="font-size:11px;color:var(--mu);line-height:1.55">Prescribing physicians are the most trusted voice for GLP-1 patients. Build referral flow where prescribers can enroll patients in Omada's GLP-1 program at point of prescription.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px;border-top:2px solid var(--tl)"><div style="font-size:11px;font-weight:600;color:var(--tl);margin-bottom:5px">Employer Study Data</div><p style="font-size:11px;color:var(--mu);line-height:1.55">Omada published research showing GLP-1 + Omada = more fat loss, preserved muscle, better mental health. Turn this into employer case study content that drives new enterprise sales AND member activation.</p></div>
+    </div>
+  </div>
+
+  <div class="card" style="border-top:2px solid var(--v)">
+    <div class="ctit" style="color:var(--v)">Growth Experimentation Framework</div>
+    <p style="font-size:12px;color:var(--mu);margin-bottom:16px;line-height:1.75">From the job posting: <em style="color:#c8e8e0">"Someone who is deeply curious and adaptable with high mental clock speed." </em>The Sr. Director builds a culture of rapid testing — hypothesis, experiment, measure, iterate. Every assumption is testable. Every channel has a running experiment.</p>
+    <div style="overflow-x:auto"><table><thead><tr><th>Experiment Type</th><th>Hypothesis</th><th>Primary Metric</th><th>Cadence</th><th>Decision Threshold</th></tr></thead><tbody>
+      <tr><td style="font-weight:600;color:var(--tx)">Email Subject Line</td><td>Personalized condition mention outperforms generic</td><td>Open rate</td><td>Weekly</td><td style="font-size:10px;color:var(--su)">Statistical sig. at 95% conf.</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Landing Page CTA</td><td>"Check My Coverage" vs "Get Started" vs "Learn More"</td><td>Click-to-enrollment rate</td><td>Bi-weekly</td><td style="font-size:10px;color:var(--su)">10%+ lift to ship</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Outreach Timing</td><td>Tuesday morning vs. Sunday evening for GLP-1 emails</td><td>Open + enrollment rate</td><td>Monthly</td><td style="font-size:10px;color:var(--su)">5%+ enrollment rate lift</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Social Proof Type</td><td>Member outcome data vs. employer logo vs. clinical study</td><td>Enrollment completion</td><td>Quarterly</td><td style="font-size:10px;color:var(--su)">Directional after 30 days</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Channel Mix</td><td>Email-only vs. email + SMS vs. email + direct mail</td><td>Overall enrollment rate</td><td>Quarterly</td><td style="font-size:10px;color:var(--su)">15%+ improvement to scale</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Personalization Depth</td><td>Condition-specific messaging vs. generic wellness</td><td>Enrollment + 30-day retention</td><td>Monthly</td><td style="font-size:10px;color:var(--su)">Both enrollment AND retention improve</td></tr>
+    </tbody></table></div>
+  </div>
+</div>
+</div>
+
+<!-- DASHBOARD -->
+<div id="pg-dash" class="pg" style="padding-top:58px">
+<div class="wrap">
+  <div class="ey">Growth Marketing Dashboard</div>
+  <h2>Metrics That Matter — From Eligible to Outcomes</h2>
+  <p class="sub">Every growth marketing decision at Omada must trace back to member acquisition, retention, and outcomes. The Sr. Director builds and owns this dashboard — reporting to the CMO and CEO on the metrics that directly drive Omada's commercial success.</p>
+
+  <div class="sync-bar">
+    <div style="display:flex;align-items:center;gap:8px"><div class="sdot"></div><span class="slbl">GROWTH DATA: LIVE</span><span class="ssrc">Salesforce · HubSpot · Mixpanel · Google Analytics · Attribution Platform</span></div>
+    <div class="smeta"><div class="si"><div class="sl">ENTERPRISE CLIENTS</div><div class="sv">1,800+</div></div><div class="si"><div class="sl">ACTIVE PROGRAMS</div><div class="sv">5</div></div><div class="si"><div class="sl">MEMBERS SERVED</div><div class="sv">1M+</div></div></div>
+  </div>
+
+  <div class="metgrid">
+    <div class="met"><div class="mbar" style="background:var(--t)"></div><div class="mlbl">MONTHLY NEW ENROLLMENTS</div><div class="mval">~12K</div><div class="mch" style="color:var(--t)">Target: 25K+</div><div class="msub">across all programs</div></div>
+    <div class="met"><div class="mbar" style="background:var(--b)"></div><div class="mlbl">ELIGIBLE → ENROLLED RATE</div><div class="mval">~18%</div><div class="mch" style="color:var(--b)">Target: 30%+</div><div class="msub">industry avg: 12%</div></div>
+    <div class="met"><div class="mbar" style="background:var(--g)"></div><div class="mlbl">EMAIL OPEN RATE</div><div class="mval">28%</div><div class="mch" style="color:var(--g)">Target: 38%+</div><div class="msub">vs. industry avg: 22%</div></div>
+    <div class="met"><div class="mbar" style="background:var(--t)"></div><div class="mlbl">12-WEEK RETENTION</div><div class="mval">~71%</div><div class="mch" style="color:var(--t)">Target: 80%+</div><div class="msub">program completion</div></div>
+    <div class="met"><div class="mbar" style="background:var(--pk)"></div><div class="mlbl">COST PER ENROLLMENT</div><div class="mval">~$38</div><div class="mch" style="color:var(--pk)">Target: &lt;$25</div><div class="msub">blended all channels</div></div>
+    <div class="met"><div class="mbar" style="background:var(--v)"></div><div class="mlbl">MEMBER LTV (12 MO)</div><div class="mval">$840+</div><div class="mch" style="color:var(--v)">LTV:CAC ~22×</div><div class="msub">per active member</div></div>
+    <div class="met"><div class="mbar" style="background:var(--b)"></div><div class="mlbl">GLP-1 PROGRAM GROWTH</div><div class="mval">+180%</div><div class="mch" style="color:var(--b)">YoY enrollments</div><div class="msub">fastest growing program</div></div>
+    <div class="met"><div class="mbar" style="background:var(--t)"></div><div class="mlbl">EMPLOYER ACTIVATION RATE</div><div class="mval">~62%</div><div class="mch" style="color:var(--t)">Target: 80%+</div><div class="msub">eligible employees enrolled</div></div>
+  </div>
+
+  <div class="g2" style="margin-bottom:22px">
+    <div class="card" style="border-top:2px solid var(--t)"><div class="ctit" style="color:var(--t)">Monthly Enrollments by Program</div><div style="position:relative;height:200px"><canvas id="enrollChart"></canvas></div></div>
+    <div class="card" style="border-top:2px solid var(--b)"><div class="ctit" style="color:var(--b)">Enrollment Funnel — Eligible to Active</div><div style="position:relative;height:200px"><canvas id="funnelChart"></canvas></div></div>
+  </div>
+
+  <div class="card" style="border-top:2px solid var(--g);margin-bottom:22px">
+    <div class="ctit" style="color:var(--g)">Channel ROI Framework — Every Spend Justified</div>
+    <div class="roi-note"><span>Sr. Director Standard: </span>Every channel evaluated on cost per enrollment, 12-month retention rate, and LTV:CAC ratio. Minimum: 10× LTV:CAC. Channels below threshold get budget cut; above threshold get budget increased.</div>
+    <div style="overflow-x:auto"><table><thead><tr><th>Channel</th><th>Monthly Spend</th><th>Enrollments/Mo</th><th>Cost per Enrollment</th><th>12-Mo LTV:CAC</th><th>Priority</th></tr></thead><tbody id="roi-el"></tbody></table></div>
+  </div>
+
+  <div class="card" style="border-top:2px solid var(--v)">
+    <div class="ctit" style="color:var(--v)">Full KPI Target Framework — 2025 → 2028</div>
+    <div style="overflow-x:auto"><table><thead><tr><th>KPI</th><th>Category</th><th>Source</th><th>2025</th><th>2026</th><th>2028</th></tr></thead><tbody>
+      <tr><td style="font-weight:600;color:var(--tx)">Monthly New Enrollments</td><td style="color:var(--b);font-family:'JetBrains Mono',monospace;font-size:9px">Acquisition</td><td style="color:#3a6858;font-size:10px">CRM</td><td>12K</td><td>18K</td><td style="color:var(--t);font-weight:700">28K+</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Eligible → Enrolled Rate</td><td style="color:var(--b);font-family:'JetBrains Mono',monospace;font-size:9px">Acquisition</td><td style="color:#3a6858;font-size:10px">Analytics</td><td>18%</td><td>24%</td><td style="color:var(--t);font-weight:700">32%</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Cost per Enrollment</td><td style="color:var(--b);font-family:'JetBrains Mono',monospace;font-size:9px">Efficiency</td><td style="color:#3a6858;font-size:10px">Attribution</td><td>$38</td><td>$30</td><td style="color:var(--t);font-weight:700">&lt;$22</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">12-Week Retention</td><td style="color:var(--b);font-family:'JetBrains Mono',monospace;font-size:9px">Retention</td><td style="color:#3a6858;font-size:10px">Product Analytics</td><td>71%</td><td>76%</td><td style="color:var(--t);font-weight:700">82%</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Email Open Rate</td><td style="color:var(--b);font-family:'JetBrains Mono',monospace;font-size:9px">Email</td><td style="color:#3a6858;font-size:10px">ESP Platform</td><td>28%</td><td>33%</td><td style="color:var(--t);font-weight:700">40%</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Employer Activation Rate</td><td style="color:var(--b);font-family:'JetBrains Mono',monospace;font-size:9px">B2B2C</td><td style="color:#3a6858;font-size:10px">Salesforce</td><td>62%</td><td>72%</td><td style="color:var(--t);font-weight:700">83%</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">GLP-1 Program Enrollments</td><td style="color:var(--b);font-family:'JetBrains Mono',monospace;font-size:9px">Program Mix</td><td style="color:#3a6858;font-size:10px">Product</td><td>+180% YoY</td><td>2,500/mo</td><td style="color:var(--t);font-weight:700">6,000+/mo</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Member NPS</td><td style="color:var(--b);font-family:'JetBrains Mono',monospace;font-size:9px">Satisfaction</td><td style="color:#3a6858;font-size:10px">NPS Survey</td><td>Baseline</td><td>+8pts</td><td style="color:var(--t);font-weight:700">Top quartile digital health</td></tr>
+    </tbody></table></div>
+  </div>
+</div>
+</div>
+
+<!-- TEAM -->
+<div id="pg-team" class="pg" style="padding-top:58px">
+<div class="wrap">
+  <div class="ey">Growth Marketing Team</div>
+  <h2>Player-Coach Leading a World-Class Growth Team</h2>
+  <p class="sub">From the job posting: "Fantastic leader and team-builder; a player-coach ready to closely mentor Omada's Growth Marketing team." The Sr. Director isn't just a strategist — they're in the work, running experiments, reviewing copy, and building a team that can execute Omada's ambitious growth goals.</p>
+
+  <div class="co-card" style="border-left-color:var(--b);border-color:rgba(74,124,240,.35)">
+    <div class="co-bdg" style="color:var(--b);background:rgba(74,124,240,.1);border-color:rgba(74,124,240,.22)">LEADERSHIP PHILOSOPHY — FROM THE JOB POSTING</div>
+    <p class="co-txt" style="font-style:normal">"Readiness to be a <strong style="color:var(--b)">key leader and change agent</strong> among the broader Omada leadership team." The Sr. Director sits at the intersection of marketing, product, commercial, and clinical — a cross-functional orchestrator who keeps member acquisition at the center of every decision.</p>
+  </div>
+
+  <div class="card" style="border-top:2px solid var(--b);margin-bottom:22px">
+    <div class="ctit" style="color:var(--b)">Growth Marketing Team Structure</div>
+    <div id="org-el"></div>
+  </div>
+
+  <div class="card" style="border-top:2px solid var(--t);margin-bottom:22px">
+    <div class="ctit" style="color:var(--t)">Cross-Functional Partners — Who the Sr. Director Works With</div>
+    <div style="overflow-x:auto"><table><thead><tr><th>Team</th><th>Key Collaboration</th><th>Sr. Director Dependency</th><th>Their Dependency on You</th></tr></thead><tbody>
+      <tr><td style="font-weight:600;color:var(--tx)">Commercial / Sales</td><td>Employer launch marketing, activation rate improvement</td><td>Employer population data, contract specifics</td><td style="font-size:11px">Marketing assets that improve renewal rates</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Product</td><td>Enrollment flow optimization, onboarding UX, in-app engagement</td><td>Product roadmap, A/B testing infrastructure</td><td style="font-size:11px">Member feedback and drop-off data from marketing</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Clinical</td><td>Outcomes data for marketing claims, clinical credibility</td><td>Published outcomes data, clinical validation of messaging</td><td style="font-size:11px">Member acquisition that finds the right population</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Data & Analytics</td><td>Attribution modeling, enrollment propensity, A/B test analysis</td><td>Data pipeline, claims data access, reporting</td><td style="font-size:11px">Marketing questions that need data answers</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Finance</td><td>Budget management, CAC justification, LTV modeling</td><td>Budget approvals, financial model validation</td><td style="font-size:11px">Accurate CAC and enrollment projections for planning</td></tr>
+    </tbody></table></div>
+  </div>
+
+  <div class="card" style="border-top:2px solid var(--g);margin-bottom:22px">
+    <div class="ctit" style="color:var(--g)">Near-Term Hiring Priorities</div>
+    <div class="hire-grid">
+      <div class="hire"><div class="hiret"><div class="hiren">Growth Marketing Manager (Email)</div><div class="hirew" style="color:var(--t);background:rgba(46,204,138,.12);border:1px solid rgba(46,204,138,.3)">Hire #1</div></div><p class="hired">Owns all email program design, sequencing, and optimization. Must be expert in Salesforce Marketing Cloud or HubSpot. Healthcare or regulated industry preferred. A/B testing obsessed.</p></div>
+      <div class="hire"><div class="hiret"><div class="hiren">Paid Digital / Performance Marketer</div><div class="hirew" style="color:var(--b);background:rgba(74,124,240,.12);border:1px solid rgba(74,124,240,.3)">Hire #2</div></div><p class="hired">Google Ads, Meta, programmatic, and LinkedIn. GLP-1 and prevention keyword authority. Must understand healthcare compliance and ad policy restrictions. Performance-obsessed.</p></div>
+      <div class="hire"><div class="hiret"><div class="hiren">Member Engagement Manager</div><div class="hirew" style="color:var(--g);background:rgba(240,160,48,.12);border:1px solid rgba(240,160,48,.3)">Hire #3</div></div><p class="hired">Lifecycle marketing post-enrollment — retention sequences, milestone campaigns, re-engagement. Consumer marketing background with CRM expertise. Data-driven empathy.</p></div>
+      <div class="hire"><div class="hiret"><div class="hiren">Marketing Analyst / Data Lead</div><div class="hirew" style="color:var(--pk);background:rgba(224,80,122,.12);border:1px solid rgba(224,80,122,.3)">Hire #4</div></div><p class="hired">Attribution modeling, funnel analysis, experiment design and statistical testing. SQL required. Must be able to build the enrollment propensity model that predicts who will convert.</p></div>
+      <div class="hire"><div class="hiret"><div class="hiren">B2B2C Employer Marketing Mgr</div><div class="hirew" style="color:var(--v);background:rgba(155,108,240,.12);border:1px solid rgba(155,108,240,.3)">Hire #5</div></div><p class="hired">Owns employer-side outreach: HR toolkits, launch playbooks, benefits fair materials, co-branded campaigns. Benefits industry background ideal. Lives in the employer world.</p></div>
+    </div>
+  </div>
+
+  <div class="card" style="border-top:2px solid var(--v)">
+    <div class="ctit" style="color:var(--v)">Omada Leadership Team — Key Partners</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px">
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px"><div style="font-size:12px;font-weight:600;color:var(--t);margin-bottom:3px">Sean Duffy</div><div style="font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--mu);margin-bottom:6px;letter-spacing:.07em">CEO & CO-FOUNDER</div><p style="font-size:11px;color:var(--mu);line-height:1.55">Co-founded Omada in 2011. "Hailed a potential 'medical triumph' by The New York Times." The Sr. Director presents growth results to Sean quarterly — he cares deeply about mission impact alongside growth.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px"><div style="font-size:12px;font-weight:600;color:var(--t);margin-bottom:3px">Wei-Li Shao</div><div style="font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--mu);margin-bottom:6px;letter-spacing:.07em">PRESIDENT (ex-Eli Lilly, 18 years)</div><p style="font-size:11px;color:var(--mu);line-height:1.55">Oversees commercial and product expansion. The Sr. Director's growth strategy must align with Wei-Li's view on B2B2C channel expansion and new program launches.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px"><div style="font-size:12px;font-weight:600;color:var(--t);margin-bottom:3px">Lauren Fix</div><div style="font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--mu);margin-bottom:6px;letter-spacing:.07em">COO (ex-VP Commercial Ops)</div><p style="font-size:11px;color:var(--mu);line-height:1.55">Leads operational scaling. The Sr. Director partners with Lauren on enrollment infrastructure, member journey operations, and cross-functional growth initiatives.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px"><div style="font-size:12px;font-weight:600;color:var(--t);margin-bottom:3px">Steve Nolan</div><div style="font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--mu);margin-bottom:6px;letter-spacing:.07em">CFO (ex-One Medical, Salesforce)</div><p style="font-size:11px;color:var(--mu);line-height:1.55">Oversees financial strategy post-IPO. The Sr. Director must build a rigorous CAC/LTV model and present budget justification to Steve for all growth channel investments.</p></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- PROGRAMS -->
+<div id="pg-programs" class="pg" style="padding-top:58px">
+<div class="wrap">
+  <div class="ey">Omada's 5 Program Lines</div>
+  <h2>One Platform. Five Programs. Every Chronic Condition.</h2>
+  <p class="sub">The Sr. Director must develop distinct acquisition and engagement strategies for each of Omada's five program lines — each with a different target member profile, employer sponsor type, and optimal marketing channel mix. One size does not fit all five programs.</p>
+
+  <div class="prog-grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+    <div class="prog-card" style="border-top:2px solid var(--t)"><div class="prog-icon" style="color:var(--t)">🏃</div><div class="prog-name">Prevention & Weight Health</div><p class="prog-desc">Omada's original program. CDC-recognized National Diabetes Prevention Program. Targets prediabetic, overweight employees. 16-week core program + ongoing maintenance.</p><div class="prog-tag" style="background:rgba(46,204,138,.12);color:var(--t);border:1px solid rgba(46,204,138,.3)">Flagship · Highest Volume</div></div>
+    <div class="prog-card" style="border-top:2px solid var(--b)"><div class="prog-icon" style="color:var(--b)">💉</div><div class="prog-name">Diabetes Management</div><p class="prog-desc">Type 2 diabetes management with CGM integration, insulin support, and care team. High complexity, high LTV. Members with diabetes have the greatest need and highest engagement.</p><div class="prog-tag" style="background:rgba(74,124,240,.12);color:var(--b);border:1px solid rgba(74,124,240,.3)">High LTV · CGM-Enabled</div></div>
+    <div class="prog-card" style="border-top:2px solid var(--pk)"><div class="prog-icon" style="color:var(--pk)">❤️</div><div class="prog-name">Hypertension</div><p class="prog-desc">Connected BP cuff, medication support, and lifestyle coaching. Large addressable population (1 in 3 adults). Strong managed care and health plan channel fit.</p><div class="prog-tag" style="background:rgba(224,80,122,.12);color:var(--pk);border:1px solid rgba(224,80,122,.3)">Massive TAM · BP Device</div></div>
+    <div class="prog-card" style="border-top:2px solid var(--g)"><div class="prog-icon" style="color:var(--g)">💊</div><div class="prog-name">GLP-1 Support</div><p class="prog-desc">Behavioral coaching for members on GLP-1 medications. Newest and fastest-growing program. Omada published data: more fat loss, preserved muscle, better mental health with Omada + GLP-1.</p><div class="prog-tag" style="background:rgba(240,160,48,.12);color:var(--g);border:1px solid rgba(240,160,48,.3)">🔥 Fastest Growing · High Intent</div></div>
+    <div class="prog-card" style="border-top:2px solid var(--v)"><div class="prog-icon" style="color:var(--v)">🦴</div><div class="prog-name">Joint & Muscle Health (MSK)</div><p class="prog-desc">Physical therapy-level care for back, knee, and shoulder pain — the #1 driver of employee absenteeism and surgical cost. High employer ROI story: prevents surgery, reduces disability claims.</p><div class="prog-tag" style="background:rgba(155,108,240,.12);color:var(--v);border:1px solid rgba(155,108,240,.3)">Surgery Prevention · High ROI</div></div>
+  </div>
+
+  <div class="card" style="border-top:2px solid var(--t);margin-bottom:22px">
+    <div class="ctit" style="color:var(--t)">Program-Specific Acquisition Strategy</div>
+    <div style="overflow-x:auto"><table><thead><tr><th>Program</th><th>Target Member Profile</th><th>Best Acquisition Channel</th><th>Key Message</th><th>Enrollment Trigger</th></tr></thead><tbody>
+      <tr><td style="font-weight:600;color:var(--tx)">Prevention & Weight Health</td><td style="color:var(--su);font-size:10px">BMI &gt;25, prediabetes risk, A1C 5.7–6.4</td><td style="color:var(--t)">Personalized outreach letter + email</td><td>"Prevent diabetes before it starts. Free through your employer."</td><td style="font-size:10px;color:var(--su)">Annual biometric screening data</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Diabetes Management</td><td style="color:var(--su);font-size:10px">Type 2 diabetes, A1C &gt;7, on medication</td><td style="color:var(--t)">Claims-triggered email + PCP referral</td><td>"Better A1C. Less medication. Real support. Covered by your plan."</td><td style="font-size:10px;color:var(--su)">Diabetes medication claim</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Hypertension</td><td style="color:var(--su);font-size:10px">BP &gt;130/80, on antihypertensive</td><td style="color:var(--t)">Health plan outreach + employer email</td><td>"Control your blood pressure from home. We'll send you the device."</td><td style="font-size:10px;color:var(--su)">BP medication claim + biometric</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">GLP-1 Support</td><td style="color:var(--su);font-size:10px">On Ozempic/Wegovy/Mounjaro currently</td><td style="color:var(--t)">Claims-trigger + paid search + Rx trigger</td><td>"GLP-1 works better with Omada. More fat lost. Muscle preserved."</td><td style="font-size:10px;color:var(--su)">GLP-1 prescription claim (7-day)</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">MSK (Joint & Muscle)</td><td style="color:var(--su);font-size:10px">Chronic back/knee/shoulder pain, surgery candidate</td><td style="color:var(--t)">Employer intranet + orthopedic referral</td><td>"Avoid surgery. Resolve pain. No co-pay. Start in 24 hours."</td><td style="font-size:10px;color:var(--su)">Orthopedic referral + pain medication claim</td></tr>
+    </tbody></table></div>
+  </div>
+
+  <div class="card" style="border-top:2px solid var(--g)">
+    <div class="ctit" style="color:var(--g)">GLP-1 Deep Dive — The $15B Opportunity</div>
+    <p style="font-size:12px;color:var(--mu);margin-bottom:14px;line-height:1.75">GLP-1 medications are the most significant development in chronic disease treatment in a generation. 15M+ Americans are projected to be on GLP-1s by 2030. Omada's GLP-1 Support program is positioned as the behavioral foundation that makes medications work long-term — and Omada published the clinical proof in 2025.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px">
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px"><div style="font-size:11px;font-weight:600;color:var(--g);margin-bottom:5px">The Clinical Proof</div><p style="font-size:11px;color:var(--mu);line-height:1.55">Omada published 2025 study: GLP-1 + Omada coaching = more fat loss, preserved muscle mass, and improved mental health vs. GLP-1 alone. This is the #1 acquisition asset for the program.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px"><div style="font-size:11px;font-weight:600;color:var(--t);margin-bottom:5px">The Market Signal</div><p style="font-size:11px;color:var(--mu);line-height:1.55">Every employer covering GLP-1s (now required by many large employers) needs a behavioral support program. Omada is the natural pairing — and growth marketing makes that pairing visible.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px"><div style="font-size:11px;font-weight:600;color:var(--b);margin-bottom:5px">The Acquisition Strategy</div><p style="font-size:11px;color:var(--mu);line-height:1.55">Claims-triggered email within 7 days of GLP-1 Rx. Paid search on high-intent keywords. Prescriber referral pathway. Employer benefit communications. Benefits fair presence.</p></div>
+      <div style="background:var(--sf);border:1px solid var(--br);border-radius:9px;padding:14px"><div style="font-size:11px;font-weight:600;color:var(--pk);margin-bottom:5px">The Revenue Impact</div><p style="font-size:11px;color:var(--mu);line-height:1.55">GLP-1 members have the highest LTV of any Omada program — longer engagement, more touchpoints, highest clinical complexity. Driving enrollment in this program has outsized commercial impact.</p></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ROADMAP -->
+<div id="pg-road" class="pg" style="padding-top:58px">
+<div class="wrap">
+  <div class="ey">Strategic Roadmap</div>
+  <h2>Three-Phase Growth Execution Plan</h2>
+  <p class="sub">Built on Omada's 1,800+ enterprise client base and 1M+ member history, this roadmap phases the Sr. Director's impact from infrastructure and channel optimization through program-specific acceleration and national-scale growth leadership.</p>
+
+  <div class="card" style="border-top:2px solid var(--t);margin-bottom:22px">
+    <div class="ctit" style="color:var(--t)">Monthly Enrollment Growth — 2025–2028</div>
+    <div style="position:relative;height:200px"><canvas id="roadChart"></canvas></div>
+  </div>
+
+  <div class="phase-card"><div class="ph" style="background:linear-gradient(90deg,rgba(46,204,138,.1),transparent);border-bottom:1px solid rgba(46,204,138,.2)"><div class="pnum" style="background:rgba(46,204,138,.12);border:2px solid var(--t);color:var(--t)">1</div><div><div class="ptag" style="color:var(--t)">Phase I · Months 1–6</div><div class="pname">Audit, Rebuild, and Establish Baseline</div></div></div><div class="pb"><div class="ms"><div class="msdot" style="background:var(--t)"></div><div class="mstxt">Audit every existing acquisition channel — CAC, conversion rate, enrollment quality</div></div><div class="ms"><div class="msdot" style="background:var(--t)"></div><div class="mstxt">Build or rebuild the attribution infrastructure — first-touch to enrollment to outcomes</div></div><div class="ms"><div class="msdot" style="background:var(--t)"></div><div class="mstxt">Launch 10+ concurrent A/B tests across email, landing pages, and channel mix</div></div><div class="ms"><div class="msdot" style="background:var(--t)"></div><div class="mstxt">Build employer launch playbook — standard package for every new enterprise client</div></div><div class="ms"><div class="msdot" style="background:var(--t)"></div><div class="mstxt">Hire email specialist and data analyst — the two most impactful first team members</div></div></div></div>
+
+  <div class="phase-card"><div class="ph" style="background:linear-gradient(90deg,rgba(74,124,240,.1),transparent);border-bottom:1px solid rgba(74,124,240,.2)"><div class="pnum" style="background:rgba(74,124,240,.12);border:2px solid var(--b);color:var(--b)">2</div><div><div class="ptag" style="color:var(--b)">Phase II · Months 7–18</div><div class="pname">Program-Specific Engines and Scale</div></div></div><div class="pb"><div class="ms"><div class="msdot" style="background:var(--b)"></div><div class="mstxt">Launch dedicated GLP-1 acquisition campaign — claims-triggered, paid search, prescriber</div></div><div class="ms"><div class="msdot" style="background:var(--b)"></div><div class="mstxt">Deploy enrollment propensity model — prioritize highest-likelihood members in every outreach</div></div><div class="ms"><div class="msdot" style="background:var(--b)"></div><div class="mstxt">Build re-engagement engine for the 82%+ of eligible members who haven't enrolled</div></div><div class="ms"><div class="msdot" style="background:var(--b)"></div><div class="mstxt">Grow monthly enrollments from 12K to 20K+ with improved CAC and retention</div></div><div class="ms"><div class="msdot" style="background:var(--b)"></div><div class="mstxt">Launch open enrollment blitz playbook — biggest enrollment window of the year</div></div></div></div>
+
+  <div class="phase-card" style="margin-bottom:22px"><div class="ph" style="background:linear-gradient(90deg,rgba(224,80,122,.1),transparent);border-bottom:1px solid rgba(224,80,122,.2)"><div class="pnum" style="background:rgba(224,80,122,.12);border:2px solid var(--pk);color:var(--pk)">3</div><div><div class="ptag" style="color:var(--pk)">Phase III · Months 19–36</div><div class="pname">Market Leadership and Expansion</div></div></div><div class="pb"><div class="ms"><div class="msdot" style="background:var(--pk)"></div><div class="mstxt">Drive eligible → enrolled rate from 18% to 32%+ — industry-leading activation</div></div><div class="ms"><div class="msdot" style="background:var(--pk)"></div><div class="mstxt">Scale GLP-1 program to 6,000+ monthly enrollments — the fastest-growing digital health program</div></div><div class="ms"><div class="msdot" style="background:var(--pk)"></div><div class="mstxt">Build health system referral channel — clinical pathway for physician-referred enrollments</div></div><div class="ms"><div class="msdot" style="background:var(--pk)"></div><div class="mstxt">Develop member advocacy program — turn outcomes into referrals and employer success stories</div></div><div class="ms"><div class="msdot" style="background:var(--pk)"></div><div class="mstxt">Monthly enrollments of 28K+ with &lt;$22 CAC — best-in-class performance in digital health</div></div></div></div>
+
+  <div class="card" style="border-top:2px solid var(--v);margin-bottom:22px">
+    <div class="ctit" style="color:var(--v)">Growth Marketing Budget Allocation — Year 1</div>
+    <div class="cap-grid">
+      <div class="cap"><div class="capl" style="color:var(--t)">EMAIL & LIFECYCLE MARKETING</div><div class="capv">$280K–$400K</div><p class="capd">ESP platform, email specialist hire, design, segmentation tools, and deliverability infrastructure</p></div>
+      <div class="cap"><div class="capl" style="color:var(--b)">PAID DIGITAL (SEARCH + SOCIAL)</div><div class="capv">$600K–$900K</div><p class="capd">Google Ads, Meta, LinkedIn, and programmatic for GLP-1, Prevention, and MSK programs</p></div>
+      <div class="cap"><div class="capl" style="color:var(--g)">DIRECT MAIL & OUTREACH</div><div class="capv">$200K–$350K</div><p class="capd">Personalized outreach letters, postcards, and employer direct mail for non-digital-responsive populations</p></div>
+      <div class="cap"><div class="capl" style="color:var(--pk)">TEAM & TOOLS</div><div class="capv">$800K–$1.2M</div><p class="capd">5 growth marketing hires + attribution platform, analytics tools, CRM, and A/B testing infrastructure</p></div>
+      <div class="cap"><div class="capl" style="color:var(--v)">EMPLOYER ACTIVATION</div><div class="capv">$150K–$250K</div><p class="capd">HR toolkit production, benefits fair materials, employer co-branded content, and launch playbook development</p></div>
+    </div>
+  </div>
+
+  <div class="thesis"><div class="thlbl">GROWTH MARKETING THESIS</div><p class="thq">"Omada invented this category. The clinical proof is there — members lose weight, lower their A1C, control their blood pressure, and build habits that last. The only thing standing between Omada and 10× its current scale is the marketing engine that gets every eligible member to say yes."</p><div class="thatr">— Senior Director, Growth Marketing · Omada Health · 2025</div></div>
+</div>
+</div>
+
+<script>
+var CB={};
+function goPg(id){
+  document.querySelectorAll('.pg').forEach(function(p){p.classList.remove('on')});
+  document.querySelectorAll('nav .nl button').forEach(function(b){b.classList.remove('on')});
+  var pg=document.getElementById('pg-'+id);
+  if(pg)pg.classList.add('on');
+  var nb=document.getElementById('nb-'+id);
+  if(nb)nb.classList.add('on');
+  window.scrollTo(0,0);
+  if(id==='dash'&&!CB.dash)buildDash();
+  if(id==='road'&&!CB.road)buildRoad();
+}
+
+var quals=[
+  {icon:'◆',c:'#2ECC8A',q:'15+ Years Consumer Marketing Experience',v:'"15+ years of consumer marketing experience, some healthcare or regulated industry is preferred."',ctx:'This is a senior individual contributor + team leader role at a public digital health company. 15 years means you\'ve built and scaled acquisition programs before — not managed one channel but owned the full funnel.'},
+  {icon:'◈',c:'#4A7CF0',q:'B2C or B2B2C Marketing Expertise',v:'"We are looking for someone with either strong direct Business-to-Consumer or indirect Business-to-Business-to-Consumer experience."',ctx:'Omada\'s model is B2B2C — employers and health plans buy access, but individual members must choose to enroll. You need to understand BOTH the enterprise relationship AND the individual consumer psychology.'},
+  {icon:'◉',c:'#F0A030',q:'Digital Wellness & Healthcare Passion',v:'"Someone who is genuinely passionate about the digital wellness space... Genuine empathy and appreciation for digital healthcare and someone who is ready to change the landscape!"',ctx:'This isn\'t a job for someone who wants to apply their CPG or fintech skills to healthcare. Omada needs someone who wakes up energized by the mission — making people healthier through technology.'}
+];
+var resps=[
+  {icon:'◆',c:'#2ECC8A',nm:'Own Multi-Channel Integrated Marketing Strategy',v:'"Develop and own a multi-channel integrated marketing strategy to drive user acquisition, retention, and engagement. Evaluate all of Omada\'s current customer acquisition paths."',exec:['Audit every existing acquisition channel — email, paid search, direct mail, employer outreach, health plan activation','Evaluate channel mix against go-to-market goals: employer launch activation vs. health plan enrollment vs. health system referral','Build integrated playbooks that combine channels for maximum enrollment impact by segment','Report channel performance to CMO and CEO with clear attribution and ROI by initiative']},
+  {icon:'◈',c:'#4A7CF0',nm:'Drive Member Acquisition Journey Across All Channels',v:'"Create & drive member acquisition journey for different channels. Drive sophisticated email marketing and, where appropriate, direct mailer and digital campaigns."',exec:['Design personalized enrollment journeys for each of Omada\'s 5 programs — different member profile, different message, different channel','Build and optimize sophisticated email sequences: initial outreach, open enrollment blitz, GLP-1 trigger, win-back series','Deploy direct mail for eligible populations that don\'t respond to digital outreach — personalized, claims-informed','Launch paid digital campaigns for GLP-1 Support and MSK — highest-intent, highest-LTV programs']},
+  {icon:'◉',c:'#F0A030',nm:'Generate Awareness and Get Users Signed Up for Success',v:'"Generate awareness for Omada\'s product offering, get users signed up and set up for success!"',exec:['Build brand awareness within eligible populations — "Your employer covers Omada" is the message to get through','Optimize the full enrollment funnel from eligibility check to device activation to first coach interaction','Design onboarding experiences that set members up for week-1 success — the strongest predictor of 12-week completion','Create employer marketing toolkits that help HR partners promote Omada effectively at their companies']},
+  {icon:'◇',c:'#9B6CF0',nm:'Lead, Build, and Coach the Growth Marketing Team',v:'"Fantastic leader and team-builder; a player-coach ready to closely mentor Omada\'s Growth Marketing team."',exec:['Hire and develop a world-class growth marketing team of 5-7 specialists across email, paid, analytics, and lifecycle','Build a culture of rapid experimentation — every assumption is testable, every test is measured, decisions are data-driven','Mentor each team member with career development plans, weekly 1:1s, and clear growth paths','Be a key leader among the broader Omada leadership team — growth marketing has a seat at every strategic table']}
+];
+var qwins=[
+  {period:'Days 1–30',c:'#2ECC8A',items:['Audit every acquisition channel — CAC, conversion rate, enrollment quality, and attribution accuracy','Interview 20 recently enrolled members: how did they hear about Omada? What almost stopped them?','Map the full eligible → enrolled → active → outcome journey and identify top 3 conversion bottlenecks','Review all active email sequences — subject lines, CTAs, timing, personalization depth']},
+  {period:'Days 31–60',c:'#4A7CF0',items:['Launch 5 immediate A/B tests on highest-volume email sequences','Build attribution model — proper first-touch to enrollment mapping across all 1,800+ employer clients','Hire or brief recruitment firm on email specialist and data analyst — first two team members','Develop GLP-1 acquisition brief: channel strategy, messaging framework, and experiment roadmap']},
+  {period:'Days 61–90',c:'#F0A030',items:['Present complete channel audit and 12-month strategy to CMO and CEO','Launch GLP-1 claims-triggered email sequence — first dedicated program acquisition campaign','Deliver improved employer launch playbook to commercial team — immediately impacts all new client launches','Build and ship the enrollment propensity pilot model — score all eligible members by conversion likelihood']}
+];
+var orgData=[
+  {role:'Sr. Director, Growth Marketing',rep:'CMO',scope:'Owns member acquisition strategy, full-funnel optimization, team leadership, and reporting to executive team',kpi:'Monthly enrollments + eligible → enrolled rate + CAC',c:'#2ECC8A'},
+  {role:'Growth Marketing Manager (Email)',rep:'Sr. Director',scope:'Designs and optimizes all email programs — initial outreach, lifecycle, open enrollment, GLP-1 trigger, win-back',kpi:'Email open rate + click-to-enrollment rate + deliverability',c:'#4A7CF0'},
+  {role:'Paid Digital / Performance Marketer',rep:'Sr. Director',scope:'Google Ads, Meta, programmatic, LinkedIn — GLP-1, Prevention, and MSK paid acquisition campaigns',kpi:'Cost per enrollment + ROAS + qualified traffic to enrollment page',c:'#F0A030'},
+  {role:'Member Engagement Manager',rep:'Sr. Director',scope:'Lifecycle marketing post-enrollment — retention sequences, milestone campaigns, re-engagement for lapsed members',kpi:'12-week retention rate + milestone completion + NPS',c:'#E0507A'},
+  {role:'Marketing Analyst / Data Lead',rep:'Sr. Director',scope:'Attribution modeling, funnel analysis, A/B test design and analysis, enrollment propensity model, executive reporting',kpi:'Attribution accuracy + experiment velocity + forecast accuracy',c:'#9B6CF0'}
+];
+var channelData=[
+  {ch:'Personalized Outreach Letter',type:'Direct Mail',use:'Initial eligible member activation',metric:'Enrollment rate per letter',cac:'$22–$35',pr:'HIGH'},
+  {ch:'Email — Initial Series',type:'Owned',use:'Eligible → enrolled conversion',metric:'Open rate + enrollment click',cac:'$8–$15',pr:'HIGH'},
+  {ch:'Email — GLP-1 Trigger',type:'Owned',use:'Claims-triggered GLP-1 enrollment',metric:'Enrollment rate within 30 days',cac:'$12–$22',pr:'HIGH'},
+  {ch:'Open Enrollment Email Blitz',type:'Owned',use:'Oct–Dec peak enrollment',metric:'Enrollment lift vs. baseline',cac:'$6–$12',pr:'HIGH'},
+  {ch:'Google Paid Search',type:'Paid',use:'GLP-1 + MSK high-intent capture',metric:'Cost per enrollment',cac:'$45–$80',pr:'MEDIUM'},
+  {ch:'Employer Intranet / Intranet',type:'B2B2C',use:'Employer population awareness',metric:'Page views + CTA click rate',cac:'$5–$10 (employer-funded)',pr:'HIGH'},
+  {ch:'Benefits Fair / Physical',type:'Outbound',use:'High-intent in-person enrollment',metric:'Enrollments per event',cac:'$30–$60',pr:'MEDIUM'},
+  {ch:'Health System Referral',type:'Clinical',use:'Physician-referred high-quality members',metric:'Referral conversion rate',cac:'$18–$30',pr:'GROWING'},
+];
+var roiData=[
+  {ch:'Email — Outreach Series',spend:'$45K/mo',enroll:'2,800/mo',cpe:'$16',ltvcac:'52×',pr:'HIGH'},
+  {ch:'Personalized Direct Mail',spend:'$85K/mo',enroll:'1,200/mo',cpe:'$71',ltvcac:'12×',pr:'MEDIUM'},
+  {ch:'GLP-1 Claims Email',spend:'$20K/mo',enroll:'900/mo',cpe:'$22',ltvcac:'55×',pr:'HIGH'},
+  {ch:'Google Paid Search',spend:'$120K/mo',enroll:'1,400/mo',cpe:'$86',ltvcac:'10×',pr:'MEDIUM'},
+  {ch:'Employer Intranet + Co-Brand',spend:'$15K/mo',enroll:'1,900/mo',cpe:'$8',ltvcac:'105×',pr:'HIGH'},
+  {ch:'Open Enrollment Blitz (Oct–Dec)',spend:'$60K/mo',enroll:'4,200/mo',cpe:'$14',ltvcac:'60×',pr:'HIGH'},
+  {ch:'Health System Referral',spend:'$25K/mo',enroll:'600/mo',cpe:'$42',ltvcac:'20×',pr:'GROWING'},
+];
+
+function h(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+
+(function(){var el=document.getElementById('quals-el');quals.forEach(function(q){el.innerHTML+='<div class="resp-card"><div class="rh" style="background:'+q.c+'14;border-color:'+q.c+'30"><div class="ri" style="color:'+q.c+'">'+q.icon+'</div><div class="rn">'+q.q+'</div></div><div class="rb"><div><div class="rlbl" style="color:'+q.c+'">FROM THE JOB POSTING</div><p class="rverb" style="border-color:'+q.c+'">'+q.v+'</p></div><div><div class="rlbl" style="color:#6A9888">WHAT THIS MEANS AT OMADA</div><p style="font-size:11px;color:#8AB8A8;line-height:1.7">'+q.ctx+'</p></div></div></div>';});})();
+(function(){var el=document.getElementById('resps-el');resps.forEach(function(r){var li=r.exec.map(function(x){return '<li><span style="color:'+r.c+'">›</span>'+h(x)+'</li>';}).join('');el.innerHTML+='<div class="resp-card" style="margin-bottom:12px"><div class="rh" style="background:'+r.c+'14;border-color:'+r.c+'30"><div class="ri" style="color:'+r.c+'">'+r.icon+'</div><div class="rn">'+r.nm+'</div></div><div class="rb"><div><div class="rlbl" style="color:'+r.c+'">JOB POSTING LANGUAGE</div><p class="rverb" style="border-color:'+r.c+'">'+r.v+'</p></div><div><div class="rlbl" style="color:#6A9888">HOW WE EXECUTE AT OMADA</div><ul class="rexec">'+li+'</ul></div></div></div>';});})();
+(function(){var el=document.getElementById('qw-el');qwins.forEach(function(q){var li=q.items.map(function(x){return '<li><span style="color:'+q.c+'">›</span>'+h(x)+'</li>';}).join('');el.innerHTML+='<div class="qwc" style="border-top:2px solid '+q.c+'"><div class="qwp" style="color:'+q.c+'">'+q.period+'</div><ul class="qwl">'+li+'</ul></div>';});})();
+(function(){var el=document.getElementById('org-el');orgData.forEach(function(r){el.innerHTML+='<div class="org-row" style="border-left:3px solid '+r.c+'"><div><div class="orole">'+r.role+'</div><div class="orep" style="color:'+r.c+'">REPORTS TO: '+r.rep.toUpperCase()+'</div></div><div class="oscope">'+r.scope+'</div><div class="okpi" style="background:'+r.c+'14;border:1px solid '+r.c+'28"><div class="okl" style="color:'+r.c+'">PRIMARY KPI</div><div class="okv">'+r.kpi+'</div></div></div>';});})();
+(function(){var tb=document.getElementById('channel-tbody');channelData.forEach(function(r){var bs=r.pr==='HIGH'?'background:rgba(46,204,138,.1);border:1px solid rgba(46,204,138,.35);color:#2ECC8A':r.pr==='GROWING'?'background:rgba(155,108,240,.1);border:1px solid rgba(155,108,240,.35);color:#9B6CF0':'background:rgba(74,124,240,.1);border:1px solid rgba(74,124,240,.35);color:#4A7CF0';tb.innerHTML+='<tr><td style="font-weight:600;color:#E8F8F4">'+r.ch+'</td><td style="color:#8AB8A8;font-size:10px">'+r.type+'</td><td style="color:#8AB8A8">'+r.use+'</td><td style="color:#8AB8A8;font-size:10px">'+r.metric+'</td><td style="color:#2ECC8A;font-weight:600">'+r.cac+'</td><td><span style="font-family:\'JetBrains Mono\',monospace;font-size:8px;letter-spacing:.07em;border-radius:4px;padding:3px 8px;'+bs+'">'+r.pr+'</span></td></tr>';});})();
+(function(){var tb=document.getElementById('roi-el');roiData.forEach(function(r){var bs=r.pr==='HIGH'?'background:rgba(46,204,138,.1);border:1px solid rgba(46,204,138,.35);color:#2ECC8A':r.pr==='GROWING'?'background:rgba(155,108,240,.1);border:1px solid rgba(155,108,240,.35);color:#9B6CF0':'background:rgba(74,124,240,.1);border:1px solid rgba(74,124,240,.35);color:#4A7CF0';tb.innerHTML+='<tr><td style="font-weight:600;color:#E8F8F4">'+r.ch+'</td><td style="color:#8AB8A8">'+r.spend+'</td><td style="color:#8AB8A8">'+r.enroll+'</td><td style="color:#2ECC8A;font-weight:600">'+r.cpe+'</td><td style="color:#F0A030;font-weight:700">'+r.ltvcac+'</td><td><span style="font-family:\'JetBrains Mono\',monospace;font-size:8px;letter-spacing:.07em;border-radius:4px;padding:3px 8px;'+bs+'">'+r.pr+'</span></td></tr>';});})();
+
+function buildDash(){
+  CB.dash=true;
+  var grid={color:'rgba(20,40,32,.8)',drawBorder:false};
+  var ticks={color:'#6A9888',font:{size:10}};
+  new Chart(document.getElementById('enrollChart'),{type:'bar',data:{labels:['Prevention','Diabetes','Hypertension','GLP-1','MSK'],datasets:[{label:'Current Mo. Enrollments',data:[4800,2200,1900,1800,1300],backgroundColor:['#2ECC8A','#4A7CF0','#E0507A','#F0A030','#9B6CF0'],borderRadius:5},{label:'Target (12 mo)',data:[8000,3500,3200,6000,3000],backgroundColor:'rgba(255,255,255,.06)',borderRadius:5}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#6A9888',font:{size:10},boxWidth:10}}},scales:{x:{grid:grid,ticks:ticks},y:{grid:grid,ticks:ticks}}}});
+  new Chart(document.getElementById('funnelChart'),{type:'bar',data:{labels:['Eligible','Aware','Checked\nEligibility','Started\nEnrollment','Enrolled','Active\n@ Wk 12'],datasets:[{label:'Members (thousands)',data:[850,320,180,95,65,46],backgroundColor:['rgba(46,204,138,.7)','rgba(46,204,138,.6)','rgba(46,204,138,.5)','rgba(46,204,138,.4)','rgba(46,204,138,.8)','rgba(46,204,138,1)'],borderRadius:4}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:grid,ticks:ticks},y:{grid:grid,ticks:{color:'#6A9888',font:{size:10},callback:function(v){return v+'K'}}}}}});
+}
+function buildRoad(){
+  CB.road=true;
+  var grid={color:'rgba(20,40,32,.8)',drawBorder:false};
+  var ticks={color:'#6A9888',font:{size:10}};
+  new Chart(document.getElementById('roadChart'),{type:'line',data:{labels:['Now','Mo 3','Mo 6','Mo 9','Mo 12','Mo 18','Mo 24','Mo 30','Mo 36'],datasets:[{label:'Monthly Enrollments (K)',data:[12,13.5,15,17,20,23,25,27,28],borderColor:'#2ECC8A',backgroundColor:'rgba(46,204,138,.1)',fill:true,tension:.4,pointBackgroundColor:'#2ECC8A',pointRadius:4},{label:'GLP-1 Program Only (K)',data:[1.2,1.6,2.0,2.8,3.5,4.5,5.2,5.8,6.0],borderColor:'#F0A030',backgroundColor:'rgba(240,160,48,.08)',fill:true,tension:.4,pointRadius:4,pointBackgroundColor:'#F0A030'},{label:'Target',data:[12,14,16,18,21,24,26,28,30],borderColor:'#4A7CF0',borderDash:[5,4],fill:false,tension:.4,pointRadius:0}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#6A9888',font:{size:10},boxWidth:10}}},scales:{x:{grid:grid,ticks:ticks},y:{grid:grid,ticks:{color:'#6A9888',font:{size:10},callback:function(v){return v+'K'}}}}}});
+}
+</script>
+</body>
+</html>
